@@ -1,112 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Agenda24</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #061a2d, #0b3558);
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0d3b66, #041b2d);
       color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 40px 20px;
     }
 
+    .container {
+      max-width: 900px;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+    }
+
     .logo img {
-      width: 160px;
-      margin-bottom: 25px;
+      max-width: 220px;
+      height: auto;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 28px;
       margin-bottom: 20px;
+      font-weight: bold;
     }
 
     p {
-      max-width: 900px;
-      margin: 0 auto 18px auto;
-      font-size: 18px;
-      line-height: 1.6;
-      color: #e6e6e6;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      color: #e5eaf0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      margin-top: 25px;
     }
 
     .cta {
-      margin-top: 40px;
+      margin-top: 35px;
     }
 
     .whatsapp-btn {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      background: #25d366;
+      background-color: #25d366;
       color: #ffffff;
       text-decoration: none;
-      font-size: 20px;
+      padding: 16px 28px;
+      border-radius: 40px;
+      font-size: 18px;
       font-weight: bold;
-      padding: 16px 30px;
-      border-radius: 50px;
-      transition: 0.2s ease;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
     .whatsapp-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 14px;
-      color: #bfc9d1;
+      color: #b8c6d9;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .whatsapp-btn {
+        font-size: 16px;
+        padding: 14px 22px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-  <!-- LOGOMARCA -->
-  <div class="logo">
-    <img src="logo-agenda24.png" alt="Agenda24">
+    <div class="logo">
+      <img src="logo-agenda24.png" alt="Agenda24">
+    </div>
+
+    <h1>
+      O Agenda24 chegou para mudar definitivamente a forma como as entregas são
+      agendadas no setor logístico.
+    </h1>
+
+    <p>
+      Chega de processos manuais, regras espalhadas e agendamentos que dependem de
+      e-mails, planilhas e confirmações demoradas. O Agenda24 automatiza todo o fluxo —
+      do pedido de venda à confirmação da entrega — conectando laboratórios,
+      distribuidoras e transportadoras em um único ecossistema inteligente.
+    </p>
+
+    <p>
+      A plataforma funciona como um hub: aplica as regras de cada distribuidora,
+      respeita janelas operacionais e <em>transit time</em>, e entrega o que o mercado
+      sempre precisou — <strong>agendamentos solicitados em até 24 horas</strong>,
+      com previsibilidade e controle.
+    </p>
+
+    <p class="highlight">
+      Mais do que uma ferramenta, o Agenda24 é um novo padrão.<br>
+      Menos ruído operacional. Mais eficiência. Entregas no tempo certo.
+    </p>
+
+    <p class="highlight">
+      <strong>Agenda24. Agendou, chegou!</strong>
+    </p>
+
+    <div class="cta">
+      <a class="whatsapp-btn"
+         href="https://wa.me/5511982089779"
+         target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        Fale conosco no WhatsApp
+      </a>
+    </div>
+
+    <footer>
+      © 2025 Agenda24 · Todos os direitos reservados
+    </footer>
+
   </div>
-
-  <!-- TEXTO INSTITUCIONAL -->
-  <p><strong>O Agenda24 chegou para mudar definitivamente a forma como as entregas são agendadas no setor logístico.</strong></p>
-
-  <p>
-    Chega de processos manuais, regras espalhadas, e agendamentos que dependem de e-mails,
-    planilhas e confirmações demoradas. O Agenda24 automatiza todo o fluxo:
-    do pedido de venda à confirmação da entrega, conectando laboratórios,
-    distribuidoras e transportadoras em um único ecossistema inteligente.
-  </p>
-
-  <p>
-    A plataforma é um hub que aplica as regras de cada distribuidora,
-    respeita janelas operacionais e transit time, e entrega o que o mercado
-    sempre precisou: agendamentos solicitados em até 24 horas,
-    com previsibilidade e controle.
-  </p>
-
-  <p>
-    <strong>Mais do que uma ferramenta, o Agenda24 é um novo padrão.</strong><br>
-    Menos ruído operacional. Mais eficiência. Entregas no tempo certo.
-  </p>
-
-  <p><strong>Agenda24. Agendou, chegou!</strong></p>
-
-  <!-- WHATSAPP -->
-  <div class="cta">
-    <a class="whatsapp-btn" href="https://wa.me/5527998809779" target="_blank">
-      📱 Fale conosco no WhatsApp
-    </a>
-  </div>
-
-  <footer>
-    © 2025 Agenda24 • Todos os direitos reservados
-  </footer>
-
 </body>
 </html>
 
